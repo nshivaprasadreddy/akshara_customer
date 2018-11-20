@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.Enquiry"
+    android:background="@drawable/welcome_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enquiry Form"
+                android:layout_gravity="center"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/rid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form1"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:hint="User Id"
+                />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form1"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Name"
+                />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form1"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Email"
+                />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form1"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Phone no."
+                />
+
+            <EditText
+                android:id="@+id/remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form1"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Remarks"
+                />
+
+
+            <Button
+                android:id="@+id/query_send"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Send"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
