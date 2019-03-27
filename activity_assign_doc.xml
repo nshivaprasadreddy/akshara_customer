@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pages.Admin.AssignDoc"
+    android:background="@drawable/welcome_bg">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:layout_margin="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:text="Select Status"/>
+
+    <Spinner
+        android:id="@+id/spin_status"
+        android:layout_width="match_parent"
+        android:background="@drawable/spiner_input"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:text="Select Employee"/>
+    <Spinner
+        android:id="@+id/spin_employee"
+        android:layout_width="match_parent"
+        android:background="@drawable/spiner_input"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/upload_des_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#ccc">
+
+    <EditText
+        android:id="@+id/remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Remarks" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"/>
+
+        <TextView
+            android:id="@+id/date_txt"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Assign"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:background="@drawable/login"/>
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
